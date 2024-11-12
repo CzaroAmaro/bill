@@ -1,0 +1,23 @@
+#body{
+    font-family: "sans-serif", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-family: "sans-serif", Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+table{
+    font-family: "sans-serif", Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #343434;
+    width: 80%;
+    margin: auto;
+
+}
+th{
+    font-size: 18px;
+    color: #454545;
+    font-weight: normal;
+}
