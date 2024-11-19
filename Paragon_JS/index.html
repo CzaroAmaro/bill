@@ -16,6 +16,8 @@
         <th>ILOŚĆ</th>
         <th>CENA</th>
         <th>SUMA</th>
+        <th>USUŃ</th>
+        <th>EDYTUJ</th>
     </tr>
     </thead>
     <tbody id="paragon_tbody">
@@ -24,10 +26,63 @@
     <tfoot>
         <tr>
             <td colspan="4">RAZEM</td>
-            <td>0,00zł</td>
+            <td id ="sumaParagonu"></td>
         </tr>
     </tfoot>
 </table>
+
+<!--Dodawanie produktu -->
+<button id ="showModalButton"> Dodaj produkt</button>
+<div id="newProductModal" class="modal">
+    <div id="modal-content">
+        <h2>Dodaj nowy produkt</h2>
+        <span id ="closeModalButton" class="closeButton">&times;</span>
+        <form id = "addForm">
+            <label> Nazwa:</label>
+            <input type = "text" id="nazwa_form">
+
+            <label> Ilość:</label>
+            <input type = "number" id="ilosc_form">
+
+            <label> Cena: </label>
+            <input type = "number" id="cena_form">
+
+            <button id = "addProductButton" type = "submit"> Dodaj Produkt</button>
+
+        </form>
+    </div>
+</div>
+
+<!--Usuwanie produktu -->
+<div id="removeProductModal" class="modal">
+    <div id="modal-content">
+        <h2>Czy na pewno chcesz usunąć ten produkt?</h2>
+        <button id="removebtn">Tak, usuń</button>
+        <button id="cancelbtn">Anuluj</button>
+    </div>
+</div>
+
+<!--Edycja produktu-->
+<div id="EditProductModal" class="modal">
+    <div id="modal-content">
+        <h2>Edycja produktu</h2>
+        <span id="closeEditModalButton" class ="closeButton">&times;</span>
+        <form id="editForm">
+            <label> Nazwa:</label>
+            <input type="text" id="edit-nazwa-form">
+
+            <label>Ilość:</label>
+            <input type="number" id="edit-ilosc-form">
+
+            <label>Cena:</label>
+            <input type="number" id="edit-cena-form">
+
+            <button id="editProductButton" type="submit">Zapisz zmiany</button>
+
+        </form>
+    </div>
+</div>
+
 <script src="index.js"></script>
 </body>
 </html>
