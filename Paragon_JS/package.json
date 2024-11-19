@@ -1,10 +1,41 @@
 {
-  "name": "Paragon_JS",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
   },
-  "private": true
+  "scripts": {
+    "start": "json-server --watch ./Paragon_JS/db.json --port 3000"
+  },
+  "name": "bill",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chokidar": "^4.0.1",
+    "colorette": "^2.0.20",
+    "dayjs": "^1.11.13",
+    "dot-prop": "^9.0.0",
+    "es-escape-html": "^0.1.1",
+    "eta": "^3.5.0",
+    "header-range-parser": "^1.1.3",
+    "http-status-emojis": "^2.2.0",
+    "inflection": "^3.0.0",
+    "ipaddr.js": "^2.2.0",
+    "json5": "^2.2.3",
+    "lowdb": "^7.0.1",
+    "milliparsec": "^4.0.0",
+    "mime": "^4.0.4",
+    "mrmime": "^2.0.0",
+    "negotiator": "^0.6.4",
+    "readdirp": "^4.0.2",
+    "regexparam": "^2.0.2",
+    "sirv": "^2.0.4",
+    "sort-on": "^6.1.0",
+    "steno": "^4.0.2",
+    "totalist": "^3.0.1",
+    "type-fest": "^4.27.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
